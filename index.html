@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tehnical Page - HTML5</title>
+    <meta charset="urf-8">
+    <meta name="author" content="Viorel">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="main.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="navbar">
+        <header>
+            HTML5
+            <i id="icon" class="fa fa-bars"></i>
+        </header>
+        <div id="nav-links">
+            <a href="#Introduction" class="nav-link">
+                Introduction
+            </a>
+            <a href="#Text_Formatting" class="nav-link">
+                Text_Formatting
+            </a>
+            <a href="#Anchors" class="nav-link">
+                Anchors
+            </a>
+            <a href="#Lists" class="nav-link">
+                Lists
+            </a>
+            <a href="#Tables" class="nav-link">
+                Tables
+            </a>
+            <a href="#Forms" class="nav-link">
+                Forms
+            </a>
+            <a href="#Classes_and_IDs" class="nav-link">
+                Classes_and_IDs
+            </a>
+        </div>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-section" id="Introduction">
+            <header>Introduction</header><br>
+            <ul>
+                <li>HTML stands for Hyper Text Markup Language</li>
+                <li>HTML is the standard markup language for creating Web pages</li>
+                <li>HTML describes the structure of a Web page</li>
+                <li>HTML consists of a series of elements</li>
+                <li>HTML elements tell the browser how to display the content</li>
+                <li>HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a
+                    link", etc.</li>
+            </ul>
+            <h3>A simple Example </h3>
+            <div class="code">
+                <code>
+                <!-- <!DCOTYPE html -->
+                <span class="tag">&#60!</span><span class="tag-name">Doctype</span>
+                <span class="attribute">html</span><span class="tag">&#62</span><br>
+
+                <!-- <html lang="en"> -->
+                <span class="tag">&#60</span><span class="tag-name">html</span>
+                <span class="attribute">lang</span><span class="tag">="</span><span class="value">en</span><span
+                    class="tag">"</span><span class="tag">&#62</span><br>
+
+                <!-- <head> -->
+                <span class="tag">&#60</span><span class="tag-name">head</span><span class="tag">&#62</span><br>
+
+                <!-- <title>Document title</title> -->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">title</span><span class="tag">&#62</span>Document
+                title<span class="tag">&#60</span><span class="tag-name">title</span><span class="tag">&#62</span><br>
+
+                <!-- <meta charset="utf-8">  -->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">meta</span>
+                <span class="attribute">charset</span><span class="tag">="</span><span class="value">utf-8</span><span
+                    class="tag">"</span><span class="tag">&#62</span><br>
+                <!-- </head> -->
+                <span class="tag">&#60/</span><span class="tag-name">head</span><span class="tag">&#62</span><br>
+
+                <!-- <body> -->
+                <span class="tag">&#60</span><span class="tag-name">body</span><span class="tag">&#62</span><br>
+
+                <!-- <h1>Most important heading</h1> -->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">h1</span><span class="tag">&#62</span>
+                Most important heading
+                <span class="tag">&#60/</span><span class="tag-name">h1</span><span class="tag">&#62</span><br>
+
+                <!-- <p>This is a paragprah</p> -->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">p</span><span class="tag">&#62</span>This is a
+                paragraph<span class="tag">&#60/</span><span class="tag-name">p</span><span class="tag">&#62</span><br>
+
+                <!-- body end -->
+                <span class="tag">&#60/</span><span class="tag-name">body</span><span class="tag">&#62</span><br>
+
+                <!-- html end -->
+                <span class="tag">&#60/</span><span class="tag-name">html</span><span class="tag">&#62</span>
+            </code>
+            </div><br>
+            <h3>Example Explained</h3>
+            <ul>
+                <li><span class="tag">&#60!</span><span class="tag-name">Doctype</span>
+                    <span class="attribute">html</span><span class="tag">&#62</span>
+                    declaration defines that this document is an HTML5 document
+                </li>
+                <li>The <span class="tag">&#60</span><span class="tag-name">html</span><span class="tag">&#62</span>
+                    element is the root element of an HTML page</li>
+                <li>The <span class="tag">&#60</span><span class="tag-name">head</span><span class="tag">&#62</span>
+                    element contains meta information about the HTML page
+                </li>
+                <li>The <span class="tag">&#60</span><span class="tag-name">title</span><span class="tag">&#62</span>
+                    element specifies a title for the HTML page (which is shown in the browser's title bar
+                    or in the page's tab)</li>
+                <li>The <span class="tag">&#60</span><span class="tag-name">body</span><span class="tag">&#62</span>
+                    element defines the document's body, and is a container for all the visible contents, such as
+                    headings, paragraphs, images, hyperlinks, tables, lists, etc.
+                </li>
+                <li>The <span class="tag">&#60</span><span class="tag-name">h1</span><span class="tag">&#62</span>
+                    element defines a large heading</li>
+                <li>The <span class="tag">&#60</span><span class="tag-name">p</span><span class="tag">&#62</span>
+                    element defines a paragraph</li>
+            </ul>
+        </section>
+        <hr>
+
+        <section class="main-section" id="Text_Formatting">
+            <header>Text_Formatting</header>
+            <h3>Headins</h3>
+            <span class="tag">&#60</span><span class="tag-name">h1</span><span class="tag">&#62</span>Heading1
+            <span class="tag">&#60/</span><span class="tag-name">h1</span><span class="tag">&#62</span><br>
+
+            <span class="tag">&#60</span><span class="tag-name">h2</span><span class="tag">&#62</span>Heading2
+            <span class="tag">&#60/</span><span class="tag-name">h2</span><span class="tag">&#62</span><br>
+
+            <span class="tag">&#60</span><span class="tag-name">h3</span><span class="tag">&#62</span>Heading2
+            <span class="tag">&#60/</span><span class="tag-name">h3</span><span class="tag">&#62</span><br>
+
+            <span class="tag">&#60</span><span class="tag-name">h4</span><span class="tag">&#62</span>Heading4
+            <span class="tag">&#60/</span><span class="tag-name">h4</span><span class="tag">&#62</span><br>
+
+            <span class="tag">&#60</span><span class="tag-name">h5</span><span class="tag">&#62</span>Heading5
+            <span class="tag">&#60/</span><span class="tag-name">h5</span><span class="tag">&#62</span><br>
+
+            <span class="tag">&#60</span><span class="tag-name">h6</span><span class="tag">&#62</span>Heading6
+            <span class="tag">&#60/</span><span class="tag-name">h6</span><span class="tag">&#62</span><br><br>
+
+            <h3>Paragraphs</h3>
+            <ul>
+                <li><span class="tag">&#60</span><span class="tag-name">p</span><span class="tag">&#62</span> Defines a
+                    paragraph</li>
+                <li><span class="tag">&#60</span><span class="tag-name">br</span><span class="tag">&#62</span> Inserts a
+                    single line break</li>
+                <li><span class="tag">&#60</span><span class="tag-name">pre</span><span class="tag">&#62</span> Defines
+                    pre-formatted text</li>
+            </ul>
+            <h3>Text Formatting</h3>
+            <p>Formatting elements were designed to display special types of text:</p>
+
+            <div class="code">
+                <code>
+                <span class="tag">&#60</span><span class="tag-name">b</span><span class="tag">&#62</span>Bold
+                text<span class="tag">&#60/</span><span class="tag-name">b</span><span class="tag">&#62</span><br>
+
+                <span class="tag">&#60</span><span class="tag-name">strong</span><span class="tag">&#62</span>Important
+                text<span class="tag">&#60/</span><span class="tag-name">strong</span><span class="tag">&#62</span><br>
+
+                <span class="tag">&#60</span><span class="tag-name">i</span><span class="tag">&#62</span>Italic
+                text<span class="tag">&#60/</span><span class="tag-name">i</span><span class="tag">&#62</span><br>
+
+                <span class="tag">&#60</span><span class="tag-name">em</span><span class="tag">&#62</span>Emphasized
+                text<span class="tag">&#60/</span><span class="tag-name">em</span><span class="tag">&#62</span><br>
+
+                <span class="tag">&#60</span><span class="tag-name">mark</span><span class="tag">&#62</span>Marked
+                text<span class="tag">&#60/</span><span class="tag-name">mark</span><span class="tag">&#62</span><br>
+
+                <span class="tag">&#60</span><span class="tag-name">small</span><span class="tag">&#62</span>Smaller
+                text<span class="tag">&#60/</span><span class="tag-name">small</span><span class="tag">&#62</span><br>
+
+                <span class="tag">&#60</span><span class="tag-name">del</span><span class="tag">&#62</span>Deleted
+                text<span class="tag">&#60/</span><span class="tag-name">del</span><span class="tag">&#62</span><br>
+
+                <span class="tag">&#60</span><span class="tag-name">ins</span><span class="tag">&#62</span>Inserted
+                text<span class="tag">&#60/</span><span class="tag-name">ins</span><span class="tag">&#62</span><br>
+
+                <span class="tag">&#60</span><span class="tag-name">sub</span><span class="tag">&#62</span>Subscript
+                text<span class="tag">&#60/</span><span class="tag-name">sub</span><span class="tag">&#62</span><br>
+
+                <span class="tag">&#60</span><span class="tag-name">sup</span><span class="tag">&#62</span>Supscript
+                text<span class="tag">&#60/</span><span class="tag-name">sup</span><span class="tag">&#62</span><br>
+            </code>
+            </div>
+
+            <div class="output">
+                <b>Bold text</b><br>
+                <strong>Strong text</strong><br>
+                <i>Italic text</i><br>
+                <em>Emphasized text</em><br>
+                <mark>Marked text</mark><br>
+                <small>Smaller text</small><br>
+                <del>Deleted text</del><br>
+                <ins>Inserted text</ins><br>
+                <sub>Subscript text</sub><br>
+                <sup>Superscript text</sup><br>
+            </div>
+        </section>
+        <hr>
+
+        <section class="main-section" id="Anchors">
+            <header>Anchors</header>
+            <p>Links are found in nearly all web pages. Links allow users to click their way from page to page.</p>
+            <div class="code">
+                <!-- <a>-->
+                <span class="tag">&#60</span><span class="tag-name">a</span>
+                <span class="attribute">href</span><span class="tag">="</span><span
+                    class="value">https://www.w3schools.com/</span><span class="tag">"</span><span
+                    class="tag">&#62</span>Content from
+                w3schools<span class="tag">&#60/</span><span class="tag-name">a</span><span class="tag">&#62</span><br>
+            </div>
+            <div class="output">
+                <a href="https://www.w3schools.com/" target="_blank">Content from w3schools</a>
+            </div>
+            <div class="note">Note: A link does not have to be text. A link can be an image or any other HTML element!
+            </div>
+        </section>
+        <hr>
+        <section class="main-section" id="Lists">
+            <header>Lists</header>
+            <p>There are two types of lists:</p><br>
+            <p>Ordered List</p>
+            <div class="code">
+                <!-- <ol>-->
+                <span class="tag">&#60</span><span class="tag-name">ol</span><span class="tag">&#62</span><br>
+
+                <!-- <li>HTML</li>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">li</span><span class="tag">&#62</span>HTML<span
+                    class="tag">&#60/</span><span class="tag-name">li</span><span class="tag">&#62</span><br>
+
+                <!-- <li>CSS</li>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">li</span><span class="tag">&#62</span>CSS<span
+                    class="tag">&#60/</span><span class="tag-name">li</span><span class="tag">&#62</span><br>
+
+                <!-- <li>JavaScript</li>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">li</span><span
+                    class="tag">&#62</span>JavaScript<span class="tag">&#60/</span><span class="tag-name">li</span><span
+                    class="tag">&#62</span><br>
+
+                <!-- </ol>-->
+                <span class="tag">&#60/</span><span class="tag-name">ol</span><span class="tag">&#62</span>
+            </div>
+            <div class="output">
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ol>
+            </div>
+            <p>Unordered List</p>
+            <div class="code">
+                <code>
+                <!-- <ul>-->
+                <span class="tag">&#60</span><span class="tag-name">ul</span><span class="tag">&#62</span><br>
+
+                <!-- <li>HTML</li>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">li</span><span class="tag">&#62</span>HTML<span
+                    class="tag">&#60/</span><span class="tag-name">li</span><span class="tag">&#62</span><br>
+
+                <!-- <li>CSS</li>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">li</span><span class="tag">&#62</span>CSS<span
+                    class="tag">&#60/</span><span class="tag-name">li</span><span class="tag">&#62</span><br>
+
+                <!-- <li>JavaScript</li>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">li</span><span
+                    class="tag">&#62</span>JavaScript<span class="tag">&#60/</span><span class="tag-name">li</span><span
+                    class="tag">&#62</span><br>
+
+                <!-- </ul>-->
+                <span class="tag">&#60/</span><span class="tag-name">ul</span><span class="tag">&#62</span>
+            </code>
+            </div>
+            <div class="output">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </section>
+        <hr>
+        <section class="main-section" id="Tables">
+            <header>Tables</header>
+            <p>The <span class="tag">&#60</span><span class="tag-name">table</span><span class="tag">&#62</span> tag
+                defines an HTML table.</p>
+            <p>Each table row is defined with a <span class="tag">&#60</span><span class="tag-name">tr</span><span
+                    class="tag">&#62</span> tag.</p>
+            <p>Each table header is defined with a <span class="tag">&#60</span><span class="tag-name">th</span><span
+                    class="tag">&#62</span> tag.</p>
+            <p>Each table data/cell is defined with a <span class="tag">&#60</span><span class="tag-name">td</span><span
+                    class="tag">&#62</span> tag.</p>
+            <div class="code">
+                <code>
+                <!-- <table>-->
+                <span class="tag">&#60</span><span class="tag-name">table</span><span class="tag">&#62</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+
+                <!-- <th>lang</th>-->
+                <span class="tag">&#60</span><span class="tag-name">th</span><span class="tag">&#62</span>lang<span
+                    class="tag">&#60/</span><span class="tag-name">th</span><span class="tag">&#62</span><br>
+
+                <!-- <th>ext</th>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">th</span><span class="tag">&#62</span>ext<span
+                    class="tag">&#60/</span><span class="tag-name">th</span><span class="tag">&#62</span><br>
+
+                <!-- <td>HTML</td>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">td</span><span class="tag">&#62</span>HTML<span
+                    class="tag">&#60/</span><span class="tag-name">td</span><span class="tag">&#62</span><br>
+
+                <!-- <td>.html</td>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">td</span><span class="tag">&#62</span>.html<span
+                    class="tag">&#60/</span><span class="tag-name">td</span><span class="tag">&#62</span><br>
+
+                <!--<tr>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">tr</span><span class="tag">&#62</span><br>
+
+                <!-- <td>Css</td>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">td</span><span class="tag">&#62</span>CSS<span
+                    class="tag">&#60/</span><span class="tag-name">td</span><span class="tag">&#62</span><br>
+
+                <!-- <td>.css</td>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">td</span><span class="tag">&#62</span>.css<span
+                    class="tag">&#60/</span><span class="tag-name">td</span><span class="tag">&#62</span><br>
+
+                <!-- </tr>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60/</span><span class="tag-name">tr</span><span class="tag">&#62</span><br>
+
+                <!-- <tr>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">tr</span><span class="tag">&#62</span><br>
+
+                <!-- <td>JS</td>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">td</span><span class="tag">&#62</span>JS<span
+                    class="tag">&#60/</span><span class="tag-name">td</span><span class="tag">&#62</span><br>
+
+                <!-- <td>.js</td>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">td</span><span class="tag">&#62</span>.js<span
+                    class="tag">&#60/</span><span class="tag-name">td</span><span class="tag">&#62</span><br>
+
+                <!-- </tr>-->
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60/</span><span class="tag-name">tr</span><span class="tag">&#62</span><br>
+
+                <!-- </table>-->
+                <span class="tag">&#60/</span><span class="tag-name">table</span><span class="tag">&#62</span>
+            </code>
+            </div>
+            <div class="output">
+                <table>
+                    <th>lang</th>
+                    <th>ext</th>
+                    <tr>
+                        <td>HTML</td>
+                        <td>.html</td>
+                    </tr>
+                    <tr>
+                        <td>CSS</td>
+                        <td>.css</td>
+                    </tr>
+                    <tr>
+                        <td>JS</td>
+                        <td>.js</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <hr>
+        <section class="main-section" id="Forms">
+            <header>Forms</header>
+            <p>An HTML form is used to collect user input. The user input is most often sent to a server for processing.
+            </p>
+            <div class="code">
+                <code>
+                <span class="tag">&#60</span><span class="tag-name">form</span><span class="tag">&#62</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">label</span><span class="attribute"> for</span><span
+                    class="tag">="</span><span class="value">name</span><span class="tag">"</span><span
+                    class="tag">&#62</span>User name:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">input</span><span class="attribute">
+                    type</span><span class="tag">="</span><span class="value">text</span><span class="tag">"</span><span
+                    class="attribute">name</span><span class="tag">="</span><span class="value">name</span><span
+                    class="tag">"</span></span><span class="tag-name"></span><span class="tag">&#62</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60/</span><span class="tag-name">label</span><span class="tag">&#62</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">label</span><span class="attribute"> for</span><span
+                    class="tag">="</span><span class="value">password</span><span class="tag">"</span><span
+                    class="tag">&#62</span>Password:<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60</span><span class="tag-name">input</span><span class="attribute">
+                    type</span><span class="tag">="</span><span class="value">password</span><span
+                    class="tag">"</span><span class="attribute">name</span><span class="tag">="</span><span
+                    class="value">password</span><span class="tag">"</span></span><span class="tag-name"></span><span
+                    class="tag">&#62</span><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <span class="tag">&#60/</span><span class="tag-name">label</span><span class="tag">&#62</span><br>
+                <span class="tag">&#60/</span><span class="tag-name">form</span><span class="tag">&#62</span>
+            </div>
+        </code>
+                <div class="output">
+                    <form>
+                        <label for="name">User name:&nbsp;
+                            <input type="text" name="user">
+                        </label><br><br>
+                        <label for="password">Password:&nbsp;&nbsp;&nbsp;
+                            <input type="password" name="password">
+                        </label>
+                    </form>
+                </div>
+                <h3>The <span class="tag">&#60</span><span class="tag-name">input</span><span class="tag">&#62</span>
+                    Element</h3>
+                <div class="code">
+                    <code>
+                    <ul>
+                        <li><span class="tag">&#60</span><span class="tag-name">input</span><span class="attribute">
+                                type</span><span class="tag">="</span><span class="value">text</span><span
+                                class="tag">"</span><span class="tag-name"></span><span class="tag">&#62</span></li>
+                        <li><span class="tag">&#60</span><span class="tag-name">input</span><span class="attribute">
+                                type</span><span class="tag">="</span><span class="value">radio</span><span
+                                class="tag">"</span><span class="tag-name"></span><span class="tag">&#62</span></li>
+                        <li><span class="tag">&#60</span><span class="tag-name">input</span><span class="attribute">
+                                type</span><span class="tag">="</span><span class="value">checkbox</span><span
+                                class="tag">"</span><span class="tag-name"></span><span class="tag">&#62</span></li>
+                        <li><span class="tag">&#60</span><span class="tag-name">input</span><span class="attribute">
+                                type</span><span class="tag">="</span><span class="value">submit</span><span
+                                class="tag">"</span><span class="tag-name"></span><span class="tag">&#62</span></li>
+                        <li><span class="tag">&#60</span><span class="tag-name">input</span><span class="attribute">
+                                type</span><span class="tag">="</span><span class="value">buttton</span><span
+                                class="tag">"</span><span class="tag-name"></span><span class="tag">&#62</span></li>
+                    </ul>
+                </code>
+                </div>
+                <div class="output">
+                    <input type="text"><br>
+                    <input type="radio"><br>
+                    <input type="checkbox"><br>
+                    <input type="button" value="Send">
+                </div>
+        </section>
+        <hr>
+        <section class="main-section" id="Classes_and_IDs">
+            <header>Classes_and_IDs</header>
+            <p>The HTML <span class="tag-name">class</span> attribute is used to specify a class for an HTML element.
+            </p>
+            <p>Multiple HTML elements can share the same class.</p>
+            <div class="note">
+                The class attribute can be used on any HTML element.<br>
+                The class name is case sensitive!
+            </div>
+            <div class="code">
+                <span class="tag">&#60</span><span class="tag-name">p</span><span class="attribute"> class</span><span
+                    class="tag">="</span><span class="value">demo</span><span class="tag">"</span><span
+                    class="tag">&#62</span>Demo<span class="tag">&#60/</span><span class="tag-name">p</span><span
+                    class="tag">&#62</span>
+            </div>
+            <div class="output">
+                <p class="demo">Demo</p>
+            </div>
+            <p>The HTML <Span class="tag-name"> id</span> attribute is used to specify a unique id for an HTML element.
+            </p>
+            <p>You cannot have more than one element with the same id in an HTML document.</p>
+            <div class="note">
+                The value of the id attribute must be unique within the HTML document.<br>
+                The value of the id attribute is case sensitive.
+            </div>
+            <div class="code">
+                <span class="tag">&#60</span><span class="tag-name">div</span><span class="attribute"> id</span><span
+                    class="tag">="</span><span class="value">circle</span><span class="tag">&#62</span><span
+                    class="tag">&#60/</span><span class="tag">div</span><span class="tag"></span>
+            </div>
+            <div class="output">
+                <div id="circle"></div>
+            </div>
+        </section>
+        <hr>
+    </main>
+
+    <script>
+        let navbar = document.getElementById("nav-links");
+        let btn = document.getElementById("icon");
+        btn.addEventListener("click", function () {
+            navbar.classList.toggle("hidden");
+        })
+    </script>
+</body>
+
+</html>

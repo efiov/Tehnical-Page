@@ -1,0 +1,199 @@
+html, body {
+	margin: 0;
+	padding: 0;
+    background-color: #f3f3f3;
+    user-select: none;
+    font-weight: 600;
+}
+
+/* navbar style */
+
+#navbar {
+    height: 100%;
+    background-color:rgb(103, 130, 161);
+    width: 200px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#navbar header {
+    text-align: center;
+	font-size: 25px;
+    font-weight: bold;
+    padding: 5px;
+    height: 25px;
+    color: rgb(226, 232, 235);
+}
+
+.nav-link {
+    font-weight: 600;
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    color: #fff;
+}
+
+#icon {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+/* main-doc style */
+#main-doc {
+    margin-left: 220px;
+    padding: 10px;
+}
+
+#main-doc ul {
+    padding: 8px;
+}
+
+section header {
+    font-size: 22px;
+    font-weight: 600;
+    color: #424242
+}
+
+section h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#formating-example {
+    display: grid;
+    grid-template-columns: repeat(2, 300px);
+    gap: 50px;
+
+}
+/* code main style */
+
+.code {
+    width: auto;
+    height: auto;
+    background-color: #fff;
+    border-left: 5px solid #c97272;
+    padding: 15px;
+    box-shadow:  8px 8px rgb(165, 158, 158);
+    margin-bottom: 15px;
+    color: rgb(71, 59, 59);
+}
+
+.tag {
+    color: rgb(54, 132, 163);
+    font-weight: 600;
+}
+
+.tag-name {
+    color: rgb(231, 101, 101);
+}
+
+.attribute {
+    color: rgb(145, 87, 137);
+}
+
+.value {
+    color: rgb(52, 150, 43);
+}
+
+.output {
+    width: auto;
+    height: auto;
+    background-color: rgb(229, 229, 233);
+    border: 5px solid #424242;
+    padding: 15px;
+    margin-bottom: 15px;
+    color: #424242;
+}
+
+.note {
+    background-color: rgb(131, 133, 134);
+    color: #fff;
+}
+
+
+
+form label {
+    font-weight: 800;
+    font-size: 15px;
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
+    border: none;
+    border-bottom: 2px solid #c97272;
+}
+
+ol {
+    padding: 8px;
+}
+
+th {
+    background-color: rgb(216, 178, 178);
+    padding: 3px;
+    font-weight: 600;
+}
+
+tr, td {
+    border: 1px solid rgb(87, 163, 199);
+    width: 100px;
+    text-align: center;
+}
+
+.demo {
+    font-size: 15px;
+    background-color: #574141;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    font-weight: 800;
+}
+
+#circle {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(27, 146, 226);
+    border-radius: 50%;
+}
+
+/* small screen */
+
+@media (max-width: 500px) {
+    #navbar {
+        height: auto;
+        width: 100%;
+    }
+    
+    #main-doc {
+        margin-left: 0;
+        padding: 10px;
+    }
+
+    #icon {
+        display: block;
+        width: 50px;
+        position: fixed;
+        top: 5px;
+        right: 0px;
+    } 
+
+    #nav-links {
+        text-align: center;
+        display: block;
+    }
+}
+
+#navbar a:hover {
+    background-color: #858a8f;
+    color:#fff;
+}
+
+
+
+
+
